@@ -26,4 +26,12 @@ public class Turno {
 
     private Boolean pago;
 
+    @ManyToOne
+    @JoinColumn(name = "barbero_id", nullable = false)
+    private Turno turno;
+
+    @ManyToOne
+    @JoinColumn(name = "barbero_id", nullable = false)
+    private Barbero barbero;
+
 }
