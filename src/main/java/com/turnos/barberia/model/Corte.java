@@ -2,6 +2,7 @@ package com.turnos.barberia.model;
 
 
 import com.turnos.barberia.enums.TipoCorte;
+import com.turnos.barberia.enums.TipoPago;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -27,4 +28,7 @@ public class Corte {
 
     @Column(nullable = false, precision = 10, scale = 2)
     private BigDecimal precio;
+
+    @Enumerated(EnumType.STRING)
+    private TipoPago tipoPago;
 }
