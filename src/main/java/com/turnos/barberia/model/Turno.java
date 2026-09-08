@@ -28,10 +28,9 @@ public class Turno {
 
     @ManyToOne
     @JoinColumn(name = "barbero_id", nullable = false)
-    private Turno turno;
+    private Barbero barbero;
 
     @ManyToOne
-    @JoinColumn(name = "barbero_id", nullable = false)
-    private Barbero barbero;
+    @JoinColumn(name = "corte_id", nullable = false)
 
 }
